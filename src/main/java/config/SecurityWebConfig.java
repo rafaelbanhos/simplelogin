@@ -25,10 +25,10 @@ public class SecurityWebConfig extends WebSecurityConfigurerAdapter {
     public void configure(AuthenticationManagerBuilder builder) throws  Exception {
         builder
                 .inMemoryAuthentication()
-                .withUser("teste1").password("123")
+                .withUser("usuario1").password("123")
                     .roles("USER")
                 .and()
-                .withUser("teste2").password("123")
+                .withUser("usuario2").password("123")
                     .roles("USER");
     }
 
